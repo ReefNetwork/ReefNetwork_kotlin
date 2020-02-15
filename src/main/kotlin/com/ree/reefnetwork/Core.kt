@@ -2,8 +2,7 @@ package com.ree.reefnetwork
 
 import cn.nukkit.plugin.PluginBase
 
-class Core: PluginBase()
-{
+class Core : PluginBase() {
     override fun onLoad() {
         super.onLoad()
     }
@@ -15,6 +14,4 @@ class Core: PluginBase()
     override fun onDisable() {
         super.onDisable()
     }
-
-
 }

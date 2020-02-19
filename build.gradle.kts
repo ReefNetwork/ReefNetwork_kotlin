@@ -15,10 +15,21 @@ repositories {
 }
 
 dependencies {
+
+    compile ("org.xerial:sqlite-jdbc:3.8.11.2")
+
     compileOnly("cn.nukkit:nukkit:2.0.0-SNAPSHOT")
     testCompileOnly("cn.nukkit:nukkit:2.0.0-SNAPSHOT")
     implementation ("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 }
+
+//repositories {
+//    mavenCentral()
+//}
+//
+//dependencies {
+//    compile ("org.xerial:sqlite-jdbc:3.8.11.2")
+//}
 
 tasks {
     compileKotlin {

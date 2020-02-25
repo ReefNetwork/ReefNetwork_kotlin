@@ -4,7 +4,7 @@ plugins {
     id("com.github.johnrengelman.shadow") version "5.2.0"
 }
 
-group = "com.ree.reefnetwork"
+group = "com.ree"
 version = "2.0-SNAPSHOT"
 
 repositories {
@@ -15,21 +15,11 @@ repositories {
 }
 
 dependencies {
-
-    compile ("org.xerial:sqlite-jdbc:3.8.11.2")
-
     compileOnly("cn.nukkit:nukkit:2.0.0-SNAPSHOT")
     testCompileOnly("cn.nukkit:nukkit:2.0.0-SNAPSHOT")
     implementation ("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    implementation ("org.xerial:sqlite-jdbc:3.30.1")
 }
-
-//repositories {
-//    mavenCentral()
-//}
-//
-//dependencies {
-//    compile ("org.xerial:sqlite-jdbc:3.8.11.2")
-//}
 
 tasks {
     compileKotlin {
@@ -47,6 +37,6 @@ nukkit {
     api = listOf("2.0.0")
     author = "Ree-jp"
     description = "ReefNetWorkPlugin"
-    website = "https://github.com/ReefNetwork/ReefNetWorkPvP"
+    website = "https://github.com/ReefNetwork/ReefNetWork_kotlin"
     version = "1.0.0"
 }

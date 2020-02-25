@@ -4,7 +4,7 @@ import cn.nukkit.event.EventHandler
 import cn.nukkit.event.Listener
 import cn.nukkit.event.player.PlayerJoinEvent
 
-class EventListener() : Listener {
+class EventListener : Listener {
 
     @EventHandler
     fun onJoin(ev: PlayerJoinEvent) {

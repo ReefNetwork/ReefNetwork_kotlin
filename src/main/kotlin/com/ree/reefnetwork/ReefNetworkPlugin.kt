@@ -9,12 +9,12 @@ import com.ree.reefnetwork.sub.login.LoginSystem
 class ReefNetworkPlugin : PluginBase(), Listener {
 
     override fun onLoad() {
+        this.loadSubSystem()
         super.onLoad()
     }
 
     override fun onEnable() {
         server.pluginManager.registerEvents(EventListener(), this)
-        this.loadSubSystem()
         logger.info(TextFormat.GREEN.toString() + "Reef" + TextFormat.YELLOW + "Network" + TextFormat.LIGHT_PURPLE + "Enable")
         super.onEnable()
     }

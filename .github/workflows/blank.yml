@@ -20,7 +20,9 @@ jobs:
     - uses: actions/setup-java@v1
       with:
         java-version: 11
-
-    # Runs a single command using the runners shell
+        
+    - name: gradlew
+      run: chmod +x gradlew
+    
     - name: run_build
-      run: ./gradlew build
+      run: ./gradlew shadow
